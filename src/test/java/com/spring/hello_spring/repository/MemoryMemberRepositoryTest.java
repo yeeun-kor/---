@@ -12,6 +12,7 @@ public class MemoryMemberRepositoryTest {
         Member member = new Member();
         member.setName("정예은");
         //주석
+        //주석
 
         //리포지토리에 멤버 세이브
         repository.save(member);
