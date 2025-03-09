@@ -11,6 +11,7 @@ public class MemoryMemberRepositoryTest {
         //저장하고 싶은 회원의 정보들 넣기
         Member member = new Member();
         member.setName("정예은");
+        //주석
 
         //리포지토리에 멤버 세이브
         repository.save(member);
