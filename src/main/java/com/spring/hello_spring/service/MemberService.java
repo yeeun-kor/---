@@ -8,8 +8,11 @@ import java.util.List;
 import java.util.Optional;
 
 public class MemberService {
-    //인터페이스 타입의 레포지토리-> 구현클래스인 메모리레포지토리로 접근
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
+
+    public MemberService(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     //회원서비스개발 1. 회원가입
     public Long join(Member member) {
