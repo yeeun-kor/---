@@ -39,4 +39,8 @@ public class MemoryMemberRepository implements MemberRepository{
         //store(Map)에 저장된 객체들을  List 타입으로 꺼내옴
         return new ArrayList<>(store.values());
     }
+
+    public void clearStore() {
+        store.clear(); // store는 HashMap 같은 저장소 필드
+    }
 }
